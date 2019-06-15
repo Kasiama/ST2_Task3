@@ -13,6 +13,7 @@
 		5ED9508522B50C9100EF9300 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ED9508422B50C9100EF9300 /* Assets.xcassets */; };
 		5ED9508822B50C9100EF9300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ED9508622B50C9100EF9300 /* LaunchScreen.storyboard */; };
 		5ED9508B22B50C9100EF9300 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED9508A22B50C9100EF9300 /* main.m */; };
+		5ED9509822B53D7200EF9300 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED9509722B53D7200EF9300 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		5ED9508722B50C9100EF9300 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5ED9508922B50C9100EF9300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ED9508A22B50C9100EF9300 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5ED9509622B53D7200EF9300 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		5ED9509722B53D7200EF9300 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +61,10 @@
 		5ED9507A22B50C8E00EF9300 /* LoadedImages */ = {
 			isa = PBXGroup;
 			children = (
+				5ED9509122B53CA500EF9300 /* MainView */,
+				5ED9509222B53CED00EF9300 /* DetailsView */,
 				5ED9507B22B50C8E00EF9300 /* AppDelegate.h */,
 				5ED9507C22B50C8E00EF9300 /* AppDelegate.m */,
-				5ED9507E22B50C8E00EF9300 /* ViewController.h */,
-				5ED9507F22B50C8E00EF9300 /* ViewController.m */,
 				5ED9508122B50C8E00EF9300 /* Main.storyboard */,
 				5ED9508422B50C9100EF9300 /* Assets.xcassets */,
 				5ED9508622B50C9100EF9300 /* LaunchScreen.storyboard */,
@@ -69,6 +72,24 @@
 				5ED9508A22B50C9100EF9300 /* main.m */,
 			);
 			path = LoadedImages;
+			sourceTree = "<group>";
+		};
+		5ED9509122B53CA500EF9300 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				5ED9507E22B50C8E00EF9300 /* ViewController.h */,
+				5ED9507F22B50C8E00EF9300 /* ViewController.m */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		5ED9509222B53CED00EF9300 /* DetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				5ED9509622B53D7200EF9300 /* DetailViewController.h */,
+				5ED9509722B53D7200EF9300 /* DetailViewController.m */,
+			);
+			path = DetailsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +165,7 @@
 				5ED9508022B50C8E00EF9300 /* ViewController.m in Sources */,
 				5ED9508B22B50C9100EF9300 /* main.m in Sources */,
 				5ED9507D22B50C8E00EF9300 /* AppDelegate.m in Sources */,
+				5ED9509822B53D7200EF9300 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
