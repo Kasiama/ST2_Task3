@@ -42,68 +42,10 @@ NSString * const cellReuseId = @"cellReuseId";
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.tableView.estimatedRowHeight = 140;
-    NSArray *contentArray = @[@"https://psv4.userapi.com/c848136/u113494084/docs/d14/46db6f8bd708/8K_Ultra_187.jpg?extra=U70R7vsemmk78iSf8JI6NJ7SSpgjWDdvHuq7sP6EeSVewCNaPngQr4g5BLIMPD8pIEYJ66exTWeBzGcWegU3CCg8E3LegxxPWtgePSBaAExDu-G3nx-RBgNpkq5G80ARv70h_ziZAPVaA-Hrqt6H2_0",
-                              @"https://99px.ru/sstorage/53/2017/11/mid_212524_541981.jpg",
-                              @"https://avatars.mds.yandex.net/get-pdb/875592/6f37fac8-bf0f-4dd3-9d5a-7f96dfc45f94/orig",
-                              @"https://oboitut.com/uploads/posts/oboitut.com_2104.jpg",
-                              @"https://apod.nasa.gov/apod/image/1906/N00172886_92_beltramini.jpg",
-                              @"https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA23268_hires.jpg",
-                              @"https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA23273_hires.jpg",
-                              @"https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22948_hires.jpg",
-                              @"https://www.rautomead.com/uploads/images/gallery/1522251890RT650bronzeholows.jpg",
-                              @"https://static9.depositphotos.com/1064045/1188/i/450/depositphotos_11889482-stock-photo-butterfly.jpg",
-                              @"https://upload.wikimedia.org/wikipedia/commons/3/3d/LARGE_elevation.jpg",
-                              @"https://fr.wikipedia.org/wiki/Géomorphologie#/media/Fichier:Earth_surface_NGDC_2000.jpg",
-                              @"https://klike.net/uploads/posts/2019-03/medium/1551512888_2.jpg",
-                              @"https://upload.wikimedia.org/wikipedia/commons/1/13/Large_clematis_%28red%29.JPG",
-                              @"https://upload.wikimedia.org/wikipedia/commons/c/c4/Ferrofluid_large_spikes.jpg",
-                              @"https://upload.wikimedia.org/wikipedia/commons/4/4e/Mammillaria_prolifera20100407_076.jpg",
-                              @"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUpO_H66DVzAjA_eWn8FJ1Ohq96fzHJx5XYchlhDs2PsKkmEDFdw",
-                              @"https://cdn.humoraf.ru/wp-content/uploads/2018/09/dobryj-den-kartinki-krasivye-humoraf.ru-98.jpg",
-                              @"https://zasmeshi.ru/data/caricature/big/4416-Kogda-reshil-otkryt-svoj-biznes.jpg",
-                              @"https://thumbs.dreamstime.com/t/%D0%B7%D0%B0%D1%80%D0%B5%D0%B2%D0%BE-%D1%83%D1%82%D1%80%D0%B0-46258043.jpg",
-                              @"https://img1.akspic.com/fit/127194-gorodskoj_rajon-chikago-manhetten-metropoliya-zdanie-x750.jpg",
-                              @"https://img2.akspic.com/fit/18390-zdanie-metropoliya-dnevnoe_vremya-gorodskoj_pejzazh-chikago-x750.jpg",
-                              @"https://img1.akspic.com/fit/18558-orientir-gorodskoj_rajon-neboskreb-empajr_stejt_bilding-gorodskoj_pejzazh-x750.jpg",
-                              @"https://upload.wikimedia.org/wikipedia/commons/7/72/Spilanthes-closeup-large.jpg",
-                              @"https://bipbap.ru/wp-content/uploads/2017/09/0_1b7c09_506f1271_XL.jpg",
-                              @"https://www.rautomead.com/uploads/images/gallery/1522161415CuMgcoredwire.jpg",
-                              @"https://www.rautomead.com/uploads/images/gallery/1512388027rautomeadcathodemelting.jpg",
-                              @"https://www.rautomead.com/uploads/images/gallery/1512123485rautomeadRMTbilletcastingsilverbandsaw.jpg",
-                              @"https://www.rautomead.com/uploads/images/gallery/1512122971rautomeadRS25008mmbrasswire.jpg",
-                              @"https://www.rautomead.com/uploads/images/gallery/1512122354rautomeadgoldbondingwirerod99.999.jpg",
-                              @"https://upload.wikimedia.org/wikipedia/commons/5/5f/Adenium_obesum_%28Kyoto_Botanical_Garden%29.JPG",
-                              @"https://loremflickr.com/cache/resized/65535_33744143688_3cac5ed48c_320_240_g.jpg",
-                              @"https://upload.wikimedia.org/wikipedia/commons/1/1f/Bush2.jpg",
-                              @"https://upload.wikimedia.org/wikipedia/commons/c/c0/Alyxia.oliviformis1web.jpg",
-                              @"https://upload.wikimedia.org/wikipedia/commons/8/81/Vincetoxicum_nigrum_03_ies.jpg",
-                              @"https://upload.wikimedia.org/wikipedia/commons/d/dc/Cerbera_odollam.jpg",
-                              @"https://loremflickr.com/cache/resized/201_442017130_5b94c644c9_320_240_nofilter.jpg",
-                              @"https://upload.wikimedia.org/wikipedia/commons/4/42/Mimulopsis_violacea%2C_a_characteristic_plant_of_the_upper_forest_in_Equatorial_Africa.jpg",
-                              @"https://upload.wikimedia.org/wikipedia/commons/a/ac/Systema_Naturae_cover.jpg",
-                              @"https://upload.wikimedia.org/wikipedia/commons/f/fd/Beli-hibiskus.jpg",
-                              @"https://img1.akspic.com/fit/48325-sneg-alpy-oblako-zamorazhivanie-gornyj_relef-x750.jpg",
-                              @"https://img1.akspic.com/fit/127583-vysokij_korabl-korablekrushenie-more-galeon-parusnik-x750.jpg",
-                              @"https://img1.akspic.com/fit/127533-pervyj_kurs-burya-manilskij_galeon-tryum_polnyj-parusnaya_shlyupka-x750.jpg",
-                              @"https://img3.akspic.com/fit/93920-brig-brigantina-barka-parusnik-yahta-x750.jpg",
-                              @"https://img2.akspic.com/fit/125576-elektronnoe_ustrojstvo-tehnologia-microsoft_poverhnost-svet-kabel-x750.jpg",
-                              @"https://img2.akspic.com/fit/125379-iskusstvo-krug-art-dizajn-vizualnoe_iskusstvo-x750.jpg",
-                              @"https://loremflickr.com/cache/resized/65535_33744143688_3cac5ed48c_320_240_g.jpg",
-                              @"https://loremflickr.com/cache/resized/7879_46612728145_91f14bd25c_320_240_g.jpg",
-                              @"https://img1.akspic.com/fit/125448-macbook-apple_masvook_pro-krasnyj_cvet-tekstura-plamya-x750.jpg",
-                              @"https://img3.akspic.com/image/3373-koshki-kotenok-porody_sobak-koshki_sfinksy-koshki_i_sobaki-2048x1536.jpg",
-                              @"https://cdn.eso.org/images/screen/eso1907b.jpg",
-                              @"https://v-kosmose.com/wp-content/uploads/2015/01/M104_ngc4594_sombrero_galaxy_hi-res.jpg",
-                              @"https://img2.akspic.com/image/9929-velsh_springer_spaniel-spaniel_klamber-anglijskij_koker_spaniel-anglijskij_springer_spaniel-novoshotlandskij_retriver-2048x1536.jpg",
-                              @"https://img1.akspic.com/image/78600-amerikanskij_koker_spaniel-pes-porody_gruppy_sobak-zivotnoe-rozhdestvenskij_den-2048x1536.jpg",
-                              @"https://img2.akspic.com/image/32372-privlekatelnost-meh-morda-usy-kotenok-2048x1536.jpg",
-                              @"https://img2.akspic.com/image/95406-alyaskinskij_malamut-husky-alyaskinskij_haski-labrador-ezdovaya_sobaka-2048x1536.jpg",
-                              @"https://img3.akspic.com/image/32308-usy-morda-sobaka-pes-shhenok-2048x1536.jpg",
-                              @"https://loremflickr.com/cache/resized/7879_32371004727_b45f061741_320_240_nofilter.jpg",
-                              @"https://loremflickr.com/cache/resized/7871_46491920275_fcc6b968dd_n_320_240_nofilter.jpg",
-                              @"https://loremflickr.com/cache/resized/65535_47709833542_5efac91d69_320_240_nofilter.jpg"
-                              ];
+    //self.tableView.estimatedRowHeight = 140;
+    self.tableView.allowsSelection = NO;
+    NSArray *contentArray = @[@"https://images.wallpapersden.com/image/download/snowboard-snow-mountains_22528_7680x4320.jpg",@"https://images.wallpapersden.com/image/download/snowboarding-trick-jump_22385_7680x4320.jpg",@"https://wallpapershome.ru/images/wallpapers/the-fourth-phase-7680x4320-5k-4k-8k-trevis-rays-sneg-gori-snoubording-8206.jpg",@"https://wallpaperaccess.com/full/212746.jpg",@"https://images.techhive.com/images/article/2013/06/fm5-01-xbox-reveal-2013-05-21-100041230-orig.jpg",@"http://spellbound.nu/wp-content/uploads/2011/10/IF-1.jpg",@"https://s1.1zoom.ru/big3/262/Need_for_Speed_Ferrari_445965.jpg",@"https://img1.akspic.com/image/22783-ocean-atmosphere-horizon-coast-shore-3840x2160.jpg",@"https://www.pixel4k.com/wp-content/uploads/2018/09/brooklyn-bridge-blue-sky-buildings-8k_1538069344.jpg",@"https://wallpaperstudio10.com/static/wpdb/wallpapers/3840x2160/192098.jpg",@"https://img1.akspic.com/image/20841-promontory-horizon-dawn-drawing-morning-3840x2160.jpg",@"https://img1.akspic.com/image/20927-capital_city-macbook_pro-tower-skyscraper-horizon-5120x2880.jpg",@"https://img4.goodfon.com/original/10000x5625/2/1d/cold-embrace-starkiteck-kosmos-art.jpg",@"https://wallpapercave.com/wp/wp3837811.jpg", @"https://wallbox.ru/wallpapers/main2/201717/abstrakcia-uzor-svecenie-grafika-figura-3d.jpg", @"https://img1.akspic.com/image/22183-energy-atmosphere-earth-water_resources-water-5120x2880.jpg", @"https://wallpaperaccess.com/full/212746.jpg", @"https://pp.userapi.com/c543103/v543103522/30526/3C1ihzj8d40.jpg", @"https://wallpapercave.com/wp/wp1848541.jpg", @"https://pp.userapi.com/c543103/v543103522/3052f/axm4Rf9YVFc.jpg", @"https://pp.userapi.com/c543103/v543103522/30538/RCE3LjS-W6o.jpg", @"https://pp.userapi.com/c543103/v543103522/30f04/nfHoWCKAEmw.jpg", @"https://pp.userapi.com/c543103/v543103522/30efb/oU-z5R0uICo.jpg", @"https://wallpapercave.com/wp/wp1848554.jpg", @"https://pp.userapi.com/c543103/v543103522/30ef2/qAdoaLDAjgs.jpg", @"https://pp.userapi.com/c543101/v543101522/28e4a/ifD0qQucd0A.jpg", @"https://sun1-86.userapi.com/c543101/v543101522/28e30/zwL_FvlVHPE.jpg", @"https://pp.userapi.com/c836137/v836137037/4d4cd/B_EPRGbXXzg.jpg",@"https://pp.userapi.com/c543101/v543101522/28e53/W97gjCGkqL0.jpg",  @"https://pixelz.cc/wp-content/uploads/2017/11/pynx-nebula-uhd-8k-wallpaper.jpg", @"https://sun9-1.userapi.com/c836137/v836137037/4d4d7/K9q1JZbIM0I.jpg", @"https://pp.userapi.com/c836137/v836137037/4d4e1/82qkXuvA4YQ.jpg", @"https://pp.userapi.com/c543100/v543100522/273b6/lAvtgEoKZL8.jpg", @"https://img2.akspic.com/image/25280-space-universe-atmosphere-cosmos-earth-7680x4320.jpg", @"https://pp.userapi.com/c543100/v543100522/273be/zL1noyD7n_A.jpg", @"https://pp.userapi.com/c543100/v543100522/273c6/I0x7aodqbDY.jpg", @"https://pp.userapi.com/c543103/v543103522/2e1a9/ZpWpu5LmhTA.jpg",  @"https://sun1-29.userapi.com/c543103/v543103522/2e1a1/7HWelc2m-ig.jpg", @"https://pp.userapi.com/c543103/v543103522/2e171/LGcMARWD_I4.jpg",  @"https://pp.userapi.com/c543103/v543103522/2e191/dROgZeOhpQY.jpg", @"https://pp.userapi.com/c543103/v543103522/2e199/I_fIb15xB9w.jpg", @"https://sun1-29.userapi.com/c543103/v543103522/2e181/gq96dSgcSzQ.jpg",  @"https://sun1.beltelecom-by-minsk.userapi.com/c543101/v543101522/2a01b/ygFyNZGhxAk.jpg", @"https://pp.userapi.com/c543108/v543108172/dd65/5Du7h4JVMUA.jpg",  @"https://pp.userapi.com/c543108/v543108554/1502b/rjVqePYOI4Y.jpg", @"https://pp.userapi.com/c543101/v543101787/36813/ObltXsSC2oE.jpg", @"https://pp.userapi.com/c543101/v543101833/19bf1/S8tEAL7xRmg.jpg", @"https://pp.userapi.com/c543101/v543101787/3681c/AYaVZ7Xam4g.jpg",   @"https://pp.userapi.com/wO3RGr8Abl6XBoa72TpRG1CQFbT5h8F792Cfdw/g9N2NNp7Oo4.jpg", @"https://pp.userapi.com/c636825/v636825533/b15a/QNLNBLCVRx0.jpg",  @"https://pp.userapi.com/c543100/v543100522/292a4/eWc4I4pg6oU.jpg", @"https://sun1.beltelecom-by-minsk.userapi.com/c543100/v543100522/29292/9ajVJbJOriM.jpg", @"https://pp.userapi.com/c543100/v543100522/29289/Lfopu2o59FQ.jpg",  @"https://sun1.beltelecom-by-minsk.userapi.com/c543100/v543100522/2929b/Y7-yiL21odc.jpg", @"https://sun2.beltelecom-by-minsk.userapi.com/c543103/v543103522/21ff7/6SRmo_fHRV8.jpg",  @"https://sun1.beltelecom-by-minsk.userapi.com/c543103/v543103522/21fee/I7086MVXdZ8.jpg", @"https://pp.userapi.com/c543103/v543103522/21fe5/fslXjzZU4GU.jpg", @"https://pp.userapi.com/c543103/v543103522/22000/Z-baKP-ZVL0.jpg",  @"https://pp.userapi.com/c849428/v849428683/f7ec5/dH1y20Yf58U.jpg", @"https://pp.userapi.com/c845216/v845216622/173480/5D3y0WwC6Rs.jpg"];
+    
     
     
     NSMutableArray *arr = [NSMutableArray new];
@@ -155,6 +97,8 @@ NSString * const cellReuseId = @"cellReuseId";
     vc2.image = image;
     vc2.row = row;
     [self.navigationController pushViewController:vc2 animated:NO];
+    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:row inSection:0]
+                     atScrollPosition:UITableViewScrollPositionMiddle animated:NO];
 }
 
 - (void)addLoadedImageToDetailView:(UIImage *)image toRow:(NSInteger )row{
@@ -166,5 +110,7 @@ NSString * const cellReuseId = @"cellReuseId";
         }
     }
 }
+
+
 
 @end

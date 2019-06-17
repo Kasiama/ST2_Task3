@@ -7,9 +7,7 @@
 //
 
 #import "TableViewCell.h"
-static const CGFloat cImageHeight = 100;
-static const CGFloat cImageWidth = 200;
-static const CGFloat cItemsSpacing = 20;
+
 @implementation TableViewCell
 
 - (void)awakeFromNib {
@@ -29,10 +27,11 @@ static const CGFloat cItemsSpacing = 20;
         [self addSubview:self.tableImageView];
         self.tableImageView.translatesAutoresizingMaskIntoConstraints = NO;
         [NSLayoutConstraint activateConstraints:@[
-                                                  [self.tableImageView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:cItemsSpacing],
-                                                  [self.tableImageView.heightAnchor constraintEqualToConstant:cImageHeight],
-                                                  [self.tableImageView.widthAnchor constraintEqualToConstant:cImageWidth],
+                                                  [self.tableImageView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:20],
+                                                  [self.tableImageView.heightAnchor constraintEqualToConstant:100],
+                                                  [self.tableImageView.widthAnchor constraintEqualToConstant:200],
                                                   [self.tableImageView.centerYAnchor constraintEqualToAnchor:self.centerYAnchor],
+                                                  [self.heightAnchor constraintGreaterThanOrEqualToAnchor:self.tableImageView.heightAnchor multiplier:1.0 constant:40],
                                                   ]
          ];
         
@@ -42,12 +41,18 @@ static const CGFloat cItemsSpacing = 20;
         self.urlLabel.translatesAutoresizingMaskIntoConstraints = NO;
         
         [NSLayoutConstraint activateConstraints:@[
-                                                  [self.urlLabel.leadingAnchor constraintEqualToAnchor:self.tableImageView.trailingAnchor constant:cItemsSpacing],
-                                                  [self.urlLabel.trailingAnchor constraintEqualToAnchor:self.trailingAnchor constant:-cItemsSpacing],
-                                                  [self.urlLabel.topAnchor constraintEqualToAnchor:self.topAnchor constant:cItemsSpacing],
-                                                  [self.urlLabel.bottomAnchor constraintEqualToAnchor:self.bottomAnchor constant:-cItemsSpacing]
+                                                  [self.urlLabel.leadingAnchor constraintEqualToAnchor:self.tableImageView.trailingAnchor constant:20],
+                                                  [self.urlLabel.trailingAnchor constraintEqualToAnchor:self.trailingAnchor constant:-20],
+                                                  [self.urlLabel.topAnchor constraintEqualToAnchor:self.topAnchor constant:20],
+                                                  [self.urlLabel.bottomAnchor constraintEqualToAnchor:self.bottomAnchor constant:-20]
                                                   ]
          ];
+        
+        
+        
+        
+        
+        
         
          [self.tableImageView setUserInteractionEnabled:YES];
         UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]
