@@ -14,6 +14,7 @@
 		5ED9508822B50C9100EF9300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ED9508622B50C9100EF9300 /* LaunchScreen.storyboard */; };
 		5ED9508B22B50C9100EF9300 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED9508A22B50C9100EF9300 /* main.m */; };
 		5ED9509822B53D7200EF9300 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED9509722B53D7200EF9300 /* DetailViewController.m */; };
+		5ED9509C22B53EF200EF9300 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED9509B22B53EF200EF9300 /* TableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		5ED9508A22B50C9100EF9300 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5ED9509622B53D7200EF9300 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		5ED9509722B53D7200EF9300 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		5ED9509A22B53EF200EF9300 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		5ED9509B22B53EF200EF9300 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 			children = (
 				5ED9507E22B50C8E00EF9300 /* ViewController.h */,
 				5ED9507F22B50C8E00EF9300 /* ViewController.m */,
+				5ED9509922B53EBA00EF9300 /* New Group */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -90,6 +94,15 @@
 				5ED9509722B53D7200EF9300 /* DetailViewController.m */,
 			);
 			path = DetailsView;
+			sourceTree = "<group>";
+		};
+		5ED9509922B53EBA00EF9300 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				5ED9509A22B53EF200EF9300 /* TableViewCell.h */,
+				5ED9509B22B53EF200EF9300 /* TableViewCell.m */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +178,7 @@
 				5ED9508022B50C8E00EF9300 /* ViewController.m in Sources */,
 				5ED9508B22B50C9100EF9300 /* main.m in Sources */,
 				5ED9507D22B50C8E00EF9300 /* AppDelegate.m in Sources */,
+				5ED9509C22B53EF200EF9300 /* TableViewCell.m in Sources */,
 				5ED9509822B53D7200EF9300 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
