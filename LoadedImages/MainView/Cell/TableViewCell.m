@@ -48,8 +48,24 @@ static const CGFloat cItemsSpacing = 20;
                                                   [self.urlLabel.bottomAnchor constraintEqualToAnchor:self.bottomAnchor constant:-cItemsSpacing]
                                                   ]
          ];
+        
+         [self.tableImageView setUserInteractionEnabled:YES];
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]
+                                              initWithTarget:self action:@selector(didTapImage:)];
+        tapGesture.numberOfTapsRequired = 1;
+        [self.tableImageView addGestureRecognizer:tapGesture];
+        
+        
+        
     }
     return self;
+}
+- (void)didTapImage:(UITapGestureRecognizer *)gesture
+{
+    if (_delegate) {
+        [_delegate didTapImageAtIndex:self.tableImageView.image toRow:self.row];
+        
+    }
 }
 
 @end

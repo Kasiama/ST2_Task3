@@ -9,9 +9,11 @@
 #import "ViewController.h"
 #import "TableViewCell.h"
 #import "ImageUrlModel.h"
+#import "DetailViewController.h"
+
 NSString * const cellReuseId = @"cellReuseId";
 
-@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource,CustomTableViewCellDelegate>
 
 @property (strong, nonatomic)  UITableView *tableView;
 @property (strong, nonatomic) NSArray *imageUrlModels;
@@ -123,7 +125,8 @@ NSString * const cellReuseId = @"cellReuseId";
     TableViewCell *cell = (TableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:cellReuseId forIndexPath:indexPath];
         ImageUrlModel *model = self.imageUrlModels[indexPath.row];
          cell.urlLabel.text = model.urlString;
-        
+        cell.row = indexPath.row;
+     cell.delegate = self;
         
         
         cell.tableImageView.image = model.image;
@@ -137,13 +140,31 @@ NSString * const cellReuseId = @"cellReuseId";
                         cell.tableImageView.image = image;
                     }
                     model.image = image;
+                    [self addLoadedImageToDetailView:image toRow:indexPath.row];
                     }
             });
         });
         cell.tableImageView.image = model.image;
-
+    
     return cell;
 }
+-(void)didTapImageAtIndex:(UIImage*)image toRow:(NSUInteger)row
+{
+    
+    DetailViewController *vc2  = [[DetailViewController alloc] init];
+    vc2.image = image;
+    vc2.row = row;
+    [self.navigationController pushViewController:vc2 animated:NO];
+}
 
+- (void)addLoadedImageToDetailView:(UIImage *)image toRow:(NSInteger )row{
+    if ( [[[self.navigationController topViewController] class] isEqual:[DetailViewController class]]){
+        DetailViewController *vc2  = [self.navigationController topViewController];
+        if(vc2.row == row){
+            vc2.image = image;
+            [vc2 viewDidLoad];
+        }
+    }
+}
 
 @end

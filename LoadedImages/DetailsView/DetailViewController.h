@@ -11,7 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DetailViewController : UIViewController
-
+@property UIImageView *imageView;
+@property UIImage *image;
+@property (assign,nonatomic) NSInteger row;
 @end
 
 NS_ASSUME_NONNULL_END
