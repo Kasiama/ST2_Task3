@@ -69,9 +69,8 @@ NSString * const cellReuseId = @"cellReuseId";
          cell.urlLabel.text = model.urlString;
         cell.row = indexPath.row;
      cell.delegate = self;
-        
-        
-        cell.tableImageView.image = model.image;
+    cell.tableImageView.image = model.image;
+    if([cell.tableImageView.image isEqual: [UIImage imageNamed:@"noImage"]]){
         dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
             NSURL *url = [NSURL URLWithString:model.urlString];
             NSData *data = [NSData dataWithContentsOfURL:url];
@@ -82,11 +81,11 @@ NSString * const cellReuseId = @"cellReuseId";
                         cell.tableImageView.image = image;
                     }
                     model.image = image;
-                    [self addLoadedImageToDetailView:image toRow:indexPath.row];
+                      [self addLoadedImageToDetailView:image toRow:indexPath.row];
                     }
             });
         });
-        cell.tableImageView.image = model.image;
+    }
     
     return cell;
 }
@@ -106,6 +105,7 @@ NSString * const cellReuseId = @"cellReuseId";
         DetailViewController *vc2  = [self.navigationController topViewController];
         if(vc2.row == row){
             vc2.image = image;
+            [vc2.imageView removeFromSuperview];
             [vc2 viewDidLoad];
         }
     }

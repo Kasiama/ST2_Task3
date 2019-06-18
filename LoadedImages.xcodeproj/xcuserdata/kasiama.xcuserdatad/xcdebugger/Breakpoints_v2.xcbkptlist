@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoadedImages/MainView/ViewController.m"
-            timestampString = "582507080.04642"
+            timestampString = "582541518.653003"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoadedImages/MainView/ViewController.m"
-            timestampString = "582507080.046554"
+            timestampString = "582541518.653362"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoadedImages/MainView/ViewController.m"
-            timestampString = "582507080.046663"
+            timestampString = "582541518.653576"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "55"
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoadedImages/MainView/ViewController.m"
-            timestampString = "582507080.046756"
+            timestampString = "582541518.653839"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "-didTapImageAtIndex:toRow:"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoadedImages/MainView/Cell/TableViewCell.m"
-            timestampString = "582507080.0468481"
+            timestampString = "582507510.7506109"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoadedImages/MainView/Cell/TableViewCell.m"
-            timestampString = "582507080.046932"
+            timestampString = "582507510.750674"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoadedImages/MainView/ViewController.m"
-            timestampString = "582507080.047004"
+            timestampString = "582541518.654129"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
@@ -122,13 +122,92 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoadedImages/MainView/Cell/TableViewCell.m"
-            timestampString = "582507080.04707"
+            timestampString = "582507510.750784"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "63"
             endingLineNumber = "63"
             landmarkName = "-initWithStyle:reuseIdentifier:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoadedImages/MainView/ViewController.m"
+            timestampString = "582541518.654376"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoadedImages/MainView/ViewController.m"
+            timestampString = "582541518.654585"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController tableView:cellForRowAtIndexPath:]"
+                  moduleName = "LoadedImages"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kasiama/Documents/LoadedImages/LoadedImages/MainView/ViewController.m"
+                  timestampString = "582539898.106403"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "834">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__50-[ViewController tableView:cellForRowAtIndexPath:]_block_invoke"
+                  moduleName = "LoadedImages"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kasiama/Documents/LoadedImages/LoadedImages/MainView/ViewController.m"
+                  timestampString = "582539898.109291"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_e8_32s40s48s56s"
+                  moduleName = "LoadedImages"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kasiama/Documents/LoadedImages/LoadedImages/MainView/ViewController.m"
+                  timestampString = "582539898.111468"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

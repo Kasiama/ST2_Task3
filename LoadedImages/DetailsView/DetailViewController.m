@@ -16,14 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 500, 500)];
     self.imageView.image = self.image;
      self.imageView.translatesAutoresizingMaskIntoConstraints = NO;
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
 
     [self.view  addSubview: self.imageView];
-    [NSLayoutConstraint activateConstraints:@[[self.imageView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor constant:10],
+   
+    [NSLayoutConstraint activateConstraints:@[[self.imageView.topAnchor constraintEqualToAnchor:self.view.topAnchor constant:10],
                                               [self.imageView.leadingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.leadingAnchor constant:10],
                                               [self.view.safeAreaLayoutGuide.trailingAnchor constraintEqualToAnchor:self.imageView.trailingAnchor constant:10],
                                               [self.view.safeAreaLayoutGuide.bottomAnchor constraintEqualToAnchor:self.imageView.bottomAnchor constant:10]]];
