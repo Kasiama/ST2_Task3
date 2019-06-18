@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 500, 500)];
     self.imageView.image = self.image;
      self.imageView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -29,6 +30,9 @@
                                               [self.view.safeAreaLayoutGuide.bottomAnchor constraintEqualToAnchor:self.imageView.bottomAnchor constant:10]]];
 }
 
+- (void)back:(id)sender {
+    [self.navigationController popViewControllerAnimated:NO];
+}
 /*
 #pragma mark - Navigation
 
